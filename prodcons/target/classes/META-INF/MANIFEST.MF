@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Implementation-Title: Spring Boot Blank Project (from https://github.com
+ /making/spring-boot-blank)
+Implementation-Version: 1.0.0
+Main-Class: com.zenika.lba.strimzi.prodcons.App
+Created-By: Maven Integration for Eclipse
+

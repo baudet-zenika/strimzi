@@ -1,0 +1,36 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyConsumer",
+            "request": "launch",
+            "mainClass": "com.zenika.lba.strimzi.MyConsumer",
+            "projectName": "test",
+            "env": {
+                "bootstrap.servers": "https://bootstrap.mykafka.com:9094",
+                "TOPIC": "mytopic"
+            },
+        },
+            {
+                "type": "java",
+                "name": "Launch MyProducer",
+                "request": "launch",
+                "mainClass": "com.zenika.lba.strimzi.MyProducer",
+                "projectName": "test",
+                "env": {
+                    "bootstrap.servers": "https:// bootstrap.mykafka.com :32108",
+                    "TOPIC": "mytopic"
+                },
+            }
+        ]
+    }
